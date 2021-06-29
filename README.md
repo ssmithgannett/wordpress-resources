@@ -53,8 +53,7 @@
 ## Data stuff:
 * We mainly use [Data.World](https://data.world) to query and format excel/csv into JSONs, though on occasion we have raw JSONs available on the web to parse (Google Sheets has a great API for public data...some teams have access to this...we're probably fine with Excel)
 * I typically use a jQuery ajax function to call an API query though a PHP function...sounds more complicated than it is. 
-* Ajax templates:
-    For queries with no variable'
+* Ajax template for queries with no variable'
 ```
     
     "jQuery.ajax({
@@ -69,7 +68,7 @@
 		}
 	});// end ajax"
 ```
-    For queries with a variable:
+* Ajax template for queries with a variable:
 ```
     
     jQuery.ajax({
