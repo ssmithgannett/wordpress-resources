@@ -54,18 +54,36 @@
 * We mainly use [Data.World](https://data.world) to query and format excel/csv into JSONs, though on occasion we have raw JSONs available on the web to parse (Google Sheets has a great API for public data...some teams have access to this...we're probably fine with Excel)
 * I typically use a jQuery ajax function to call an API query though a PHP function...sounds more complicated than it is. 
 * Ajax templates:
-```sh'
-    jQuery.ajax({
+```sh
+    'for queries with no variable'
+    "jQuery.ajax({
 		url : 'path/to/php/file (must be on a server that can run php)',
 		type : 'GET',
 		success : function(data) {
-			topFive(data);
+			function-name(data);
 		},
 		error : function(request,error)
 		{
 			console.log("Request: "+JSON.stringify(request));
 		}
-	});// end ajax'
+	});// end ajax"
+```
+
+```sh
+    'for queries with a variable'
+    "Query.ajax({
+		url : 'path/to/php/file (must be on a server that can run php)',
+		data: {
+			'varibale': variable
+		},
+		success : function(data) {
+	    	function-name(data);
+		},
+		error : function(request,error)
+		{
+			console.log("Request: "+JSON.stringify(request));
+		}
+	});// end ajax"
 ```
 * PHP templates:
     * [Directly call a d.w SQL query](https://github.com/ssmithgannett/php-to-d.w-queries/blob/master/no-var.php)
