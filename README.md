@@ -50,3 +50,25 @@ Plugins:
     * [Architect Photo Essay](https://github.com/ssmithgannett/architect-photo-essay) -- An extension for Architect Longform's theme to turn a page of photos into a gallery-style photo essay
     * [GPS App](https://github.com/ssmithgannett/gps-app) -- Shortcode to place on corporate site for delivery drivers applications
 
+Data stuff:
+* We mainly use [Data.World](https://data.world) to query and format excel/csv into JSONs, though on occasion we have raw JSONs available on the web to parse (Google Sheets has a great API for public data...some teams have access to this...we're probably fine with Excel)
+* I typically use a jQuery ajax function to call an API query though a PHP function...sounds more complicated than it is. 
+* Ajax templates:
+```sh
+    jQuery.ajax({
+		url : 'https://ghminternaldev.wpengine.com/wp-content/plugins/ghm-admin/ask-mike-2/top-5.php',
+		type : 'GET',
+		success : function(data) {
+			topFive(data);
+		},
+		error : function(request,error)
+		{
+			console.log("Request: "+JSON.stringify(request));
+		}
+	});// end ajax
+```
+* PHP templates:
+    * [Directly call a d.w SQL query](https://github.com/ssmithgannett/php-to-d.w-queries/blob/master/no-var.php)
+    * [Pass variable to query a d.w dataset](https://github.com/ssmithgannett/php-to-d.w-queries/blob/master/variable.php)
+* [Encoder/decoder I use](https://meyerweb.com/eric/tools/dencoder/)
+
