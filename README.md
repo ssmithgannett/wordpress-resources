@@ -68,9 +68,9 @@
 		}
 	});// end ajax"
 ```
-
+For queries with a variable:
 ```
-    for queries with a variable
+    
     Query.ajax({
 		url : 'path/to/php/file (must be on a server that can run php)',
 		data: {
