@@ -1,3 +1,6 @@
 # WordPress Resources
 
-[Link to Google](https://www.google.com)
+
+Theme template:
+* [Underscores.me](https://underscores.me)
+
