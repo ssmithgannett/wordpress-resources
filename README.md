@@ -69,9 +69,9 @@
 	});// end ajax"
 ```
 
-```sh
-    'for queries with a variable'
-    "Query.ajax({
+```
+    for queries with a variable
+    Query.ajax({
 		url : 'path/to/php/file (must be on a server that can run php)',
 		data: {
 			'varibale': variable
@@ -83,7 +83,7 @@
 		{
 			console.log("Request: "+JSON.stringify(request));
 		}
-	});// end ajax"
+	});// end ajax
 ```
 * PHP templates:
     * [Directly call a d.w SQL query](https://github.com/ssmithgannett/php-to-d.w-queries/blob/master/no-var.php)
