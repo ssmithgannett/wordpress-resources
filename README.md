@@ -1,13 +1,24 @@
 # WordPress Resources
 
 
-Theme template:
-* [Underscores.me](https://underscores.me)
+Themes:
+* Template: [Underscores.me](https://underscores.me)
+* front-page.php: specific markup for what's designated as the home page in a site's customizer
+* page.php: for pages
+* template-parts > ....php: specific components for pages and posts, including the search page.
+* header.php: html head and the beginning of the body (header, navs, anything before the content)
+* footer.php: footer, site-wide scripts, etc 
+* inc > customizer.php: theme customizer options
+* functions.php: runs the site, essentially. Enables blocks, enqueues styles and scripts
+* style.css: theme css and metadata
+* 404.php: error page when incorrect URL is entered, ideally should direct user back home or somewhere to get them on track quickly
+
 * Repos of the themes we've built:
     * [Ask Mike](https://github.com/GannettDigital/ask-mike-theme)
     * [Gannett.com](https://github.com/ssmithgannett/corp-site)
     * [Architect](https://github.com/ssmithgannett/architect)
     * [USAT Training](https://github.com/ssmithgannett/training)
+    * [Native Ads - unreleased](https://github.com/ssmithgannett/native)
 
 Gutenberg Block dev:
 * [create-guten-block](https://github.com/ahmadawais/create-guten-block)
