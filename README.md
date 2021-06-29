@@ -56,7 +56,7 @@
 * Ajax template for queries with no variable'
 ```
     
-    "jQuery.ajax({
+    jQuery.ajax({
 		url : 'path/to/php/file (must be on a server that can run php)',
 		type : 'GET',
 		success : function(data) {
