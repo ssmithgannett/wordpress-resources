@@ -44,7 +44,7 @@
     * Enqueue scripts and styles
     * Set up shortcodes
     * Inject HTML to parts of the site
-* I usually use plugins as extensions or one-off special cases, so the ones I build are typically pretty simple. If it you're trying to affect a large portion of a site, it might be better to revise part of the theme. 
+* I usually use plugins as extensions or one-off special cases, so the ones I build are typically pretty simple. If you're trying to affect a large portion of a site, it might be better to revise part of the theme. 
     * In contrast, if you only need one small custom component on one page that will never be repeated, it's probably best to just write custom HTML into the WordPress page/post editor where it's needed.
 * Repos of some plugins I've built:
     * [Architect Photo Essay](https://github.com/ssmithgannett/architect-photo-essay) -- An extension for Architect Longform's theme to turn a page of photos into a gallery-style photo essay
