@@ -11,9 +11,11 @@ Gutenberg Block dev:
 
 Plugins:
 * These are a lot more simple than blocks. Generally, you'll only need three files in a plugin's folder: PHP, CSS and JS. I put the CSS and JS in their own folders, and then name all the files identical to the folder name 
+```sh
     Ex: this folder structure for the GPS Carriers' Application
     ├── gps-app.php
     ├── css
     |   └── gps-app.css
     └── js
         └── gps-app.js
+```
