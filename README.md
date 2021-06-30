@@ -74,7 +74,7 @@
     jQuery.ajax({
 		url : 'path/to/php/file (must be on a server that can run php)',
 		data: {
-			'varibale': variable
+			'variable': variable
 		},
 		success : function(data) {
 	    	function-name(data);
